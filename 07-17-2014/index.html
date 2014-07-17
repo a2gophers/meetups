@@ -5,63 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>First Meetup</title>
     <link rel="stylesheet" href="styles/styles.css"/>
+    <link rel="stylesheet" href="styles/themes.css"/>
+    <link rel="stylesheet" href="styles/pres.css"/>
   </head>
-  <body>
+  <body class="coverflow">
     <article>
       <section>
         <h1>First Meetup</h1>
       </section>
-      <section>
-        <h2>Keyboard Interaction</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a></h3>
+      <section class="logo go-logo">
+        <h2>Go</h2>
+		(always google for golang)
       </section>
       <section>
-        <h2>Touch Interaction</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a></h3>
+        <h2>Because who doesn't like awesome?</h2>
+		<pre><code class="language-javascript">select {
+case <-time.After(time.Second):
+    // run timeout code
+case result := <-requests:
+	// run result code
+}
+		</code></pre>
       </section>
       <section>
-        <h2>Responsive Slides</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a></h3>
+		<h2>Pointers and structs!</h2>
+		<pre><code class="language-javascript">
+import "fmt"
+
+type Awesome struct {
+    HowAwesome int
+    reason     string
+    randomPntr *func()
+}
+
+var printCool = func() { fmt.Println("go is so cool") }
+
+func main() {
+    a := Awesome{
+        HowAwesome: 5,
+        reason:     "just because",
+        randomPntr: &printCool,
+    }
+
+    (*a.randomPntr)()
+}
+		</code></pre>
       </section>
       <section>
-        <h2>Bullet List</h2>
-        <h3 class="bullet">Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a></h3>
+        <h2>But seriously...why?</h2>
+        <h3 class="bullet">A couple reasons</h3>
         <ul>
-          <li>Bullet 1</li>
-          <li>Bullet 2</li>
-          <li>Bullet 3</li>
+          <li>Lightening fast build times (that scale)</li>
+          <li>Lightening fast code</li>
+          <li>Lightening fast developers... or at least faster than before</li>
+          <li>Concurrency</li>
+          <li>Great tools in the language (fmt, imports, test, pprof, race detector)</li>
+		  <li>Great frameworks already appearing (Revel, Martini, Gorilla, gorp)</li>
+		  <li>You "can't" write bad code (go at least makes this more difficult to do)</li>
+		  <li>It makes programming fun again!</li>
         </ul>
       </section>
       <section>
-        <h2>Syntax Highlighting</h2>
-        <h3>Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a></h3>
-        <hr>
-        <pre><code class="language-javascript">bespoke.from('article', {
-  keys: true,
-  touch: true,
-  hash: true,
-  state: true,
-  bullets: 'li, .bullet'
-});
-</code></pre>
-      </section>
-      <section data-bespoke-hash="named-route">
-        <h2>Named Route</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a></h3>
-        <p>Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.</p>
+        <h2>Why this Meetup?</h2>
+		<ul class="bullet">
+		  <li>Go is growing, and I want to help share how amazing it is with others!</li>
+		  <li>Learning/projects/feedback ---> open source community</li>
+		</ul>
       </section>
       <section>
-        <h2 class="bullet">Just the beginning...</h2>
-        <hr>
-        <ul>
-          <li>Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em></li>
-          <li>Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em></li>
-          <li>Edit JavaScript in <em>'src/scripts/main.js'</em></li>
-        </ul>
-        <hr>
-        <ul>
-          <li><strong>Enjoy! :)</strong><a href="http://twitter.com/markdalgleish"> -@markdalgleish</a></li>
-        </ul>
+        <h2>What do you want out of it?</h2>
+      </section>
+	  <section>
+		<h2>Some fun links</h2>
+		<a style="color: #0089f3;" href="https://github.com/gophercon/2014-talks">https://github.com/gophercon/2014-talks</a>
+		<a style="color: #0089f3;" href="http://awesome-go.com/">http://awesome-go.com/</a>
+	  </section>
+      <section>
+        <h2>Drop me a line!</h2>
+		<table>
+		  <tbody>
+			<tr>
+			  <td>Me:</td>
+			  <td>Trey (Lee) Tacon</td>
+			</tr>
+			<tr>
+			  <td>Email:</td>
+			  <td><a style="color: #0089f3;" href="mailto:ttacon@gmail.com?Subject=Sup%20homie">ttacon@gmail.com</a> or 
+				<a style="color: #0089f3;" href="mailto:lee.b.tacon@gmail.com?Subject=Sup%20homie">lee.b.tacon@gmail.com</a></td>
+			</tr>
+			<tr>
+			  <td>GitHub:</td>
+			  <td><a style="color: #0089f3;" href="http://github.com/ttacon">github.com/ttacon</a></td>
+			</tr>
+		  </tbody>
+		</table>
       </section>
     </article>
     <script src="scripts/scripts.js"></script>
