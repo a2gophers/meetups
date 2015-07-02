@@ -3,7 +3,7 @@ Meetups
 
 ## Upcoming
 
- - 07/05/14
+ - 07/05/15
   - [Trey Tacon](http://github.com/ttacon), ["Web Services in Go"](https://github.com/a2gophers/slides/blob/master/20150702/WebServices.slide)
 
 
