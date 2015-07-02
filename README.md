@@ -10,6 +10,7 @@ Meetups
  - Cgo
  - Deep dive into the scheduler and garbage collector (performance)
  - Dev tools
+ - Writing CLIs
 
 ## Upcoming
 
